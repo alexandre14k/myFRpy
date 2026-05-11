@@ -160,3 +160,4 @@ myFRpy-gdb.py
 python-gdb.py
 myFRpy
 profile-gen-stamp
+Python/frozen_modules/

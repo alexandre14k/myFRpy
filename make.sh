@@ -13,11 +13,10 @@ main() {
 
     # 4. Regenerate everything
     make regen-all
+    make regen-frozen
 
     # 5. Build
     make -j8
-
-    make
 }
 
 if [ -t 0 ]; then

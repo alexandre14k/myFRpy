@@ -434,6 +434,74 @@ def setcopyright():
 
 def sethelper():
     builtins.help = _sitebuiltins._Helper()
+    builtins.aide = aide
+
+_FRENCH_KEYWORDS = {
+    "False": "Faux",
+    "None": "Rien",
+    "True": "Vrai",
+    "and": "et",
+    "as": "comme",
+    "assert": "affirme",
+    "async": "async",
+    "await": "attend",
+    "break": "casse",
+    "class": "classe",
+    "continue": "continuer",
+    "def": "def",
+    "del": "suppr",
+    "elif": "autrement",
+    "else": "sinon",
+    "except": "sauf",
+    "finally": "enfin",
+    "for": "pour",
+    "from": "depuis",
+    "global": "global",
+    "if": "si",
+    "import": "importe",
+    "in": "dans",
+    "is": "est",
+    "lambda": "lambda",
+    "nonlocal": "nonlocal",
+    "not": "pas",
+    "or": "ou",
+    "pass": "passer",
+    "raise": "lance",
+    "return": "retourner",
+    "try": "essayer",
+    "while": "tantque",
+    "with": "avec",
+    "yield": "ceder",
+}
+
+_AIDE_TOPICS = {
+    "boucles": "Les boucles en Python : for ... in ..., while ...",
+    "conditions": "Les conditions : if, elif, else",
+    "types": "Les types de base : int, float, str, list, dict...",
+}
+
+def aide(topic=None):
+    """Aide personnalisée en français."""
+    if topic is None:
+        print("Aide myFRpy : utilisez aide(\"mots-clés\") pour les mots-clés Python.")
+        print("Autres sujets : boucles, conditions, types")
+        return
+
+    topic = topic.lower()
+
+    # --- Special case: French keyword table ---
+    if topic in ("mots-clés", "keywords", "mot-cle", "mot-clé"):
+        print("Mots-clés Python (version française) :\n")
+        for kw, fr in _FRENCH_KEYWORDS.items():
+            print(f"  {kw:<10} → {fr}")
+        return
+
+    # --- Standard topics ---
+    if topic in _AIDE_TOPICS:
+        print(_AIDE_TOPICS[topic])
+        return
+
+    print(f"Aucun sujet d’aide trouvé pour : {topic!r}")
 
 def enablerlcompleter():
     """Enable default readline configuration on interactive prompts, by
