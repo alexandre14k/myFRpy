@@ -1,19 +1,23 @@
 #!/bin/bash
 
 main() {
+    # 1. Remove all build artifacts
+    rm -f Makefile config.status config.log pybuilddir.txt
+    rm -rf Python/frozen_modules build
+
+    # 2. Configure
+    ./configure --enable-optimizations
+
+    # 3. Clean (now that Makefile exists)
     make clean
 
-    ./configure \
-        --enable-optimizations \
-        --disable-test-modules \
-        --disable-pgo \
-        --disable-lto
+    # 4. Regenerate everything
+    make regen-all
 
-    make regen-pegen
-#    make regen-token
-#    make regen-ast
-#    make regen-opcode
-    make all
+    # 5. Build
+    make -j8
+
+    make
 }
 
 if [ -t 0 ]; then
