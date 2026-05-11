@@ -15,7 +15,7 @@ void _Py_InitVersion(void)
     }
     initialized = 1;
     PyOS_snprintf(version, sizeof(version), "%.80s (%.80s) %.80s",
-                  PY_VERSION, Py_GetBuildInfo(), Py_GetCompiler());
+                  "myFRpy 3.12.3", Py_GetBuildInfo(), Py_GetCompiler());
 }
 
 const char *

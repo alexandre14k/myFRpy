@@ -52,6 +52,7 @@ Py_GetBuildInfo(void)
     PyOS_snprintf(buildinfo, sizeof(buildinfo),
                   "%s%s%s, %.20s, %.9s", gitid, sep, revision,
                   DATE, TIME);
+    printf("%s", &buildinfo);
     return buildinfo;
 }
 
