@@ -159,3 +159,4 @@ Python/frozen_modules/MANIFEST
 myFRpy-gdb.py
 python-gdb.py
 myFRpy
+profile-gen-stamp
