@@ -645,9 +645,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     string = &_Py_ID(abs_tol);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(access);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(add);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
@@ -993,9 +990,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     string = &_Py_ID(dst_dir_fd);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(duration);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(e);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
@@ -1039,12 +1033,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(eventmask);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(exc_type);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(exc_value);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(excepthook);
@@ -1132,9 +1120,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(format);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(frequency);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(from_param);
@@ -1692,9 +1677,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     string = &_Py_ID(ps2);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(query);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(quotetabs);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
@@ -1750,9 +1732,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(replace);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(reserved);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(reset);
@@ -1857,9 +1836,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     string = &_Py_ID(sort);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(sound);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(source);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
@@ -1915,9 +1891,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(string);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(sub_key);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(symmetric_difference_update);
@@ -1981,9 +1954,6 @@ _PyUnicode_InitStaticStrings(PyInterpreterState *interp) {
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(trace_callback);
-    assert(_PyUnicode_CheckConsistency(string, 1));
-    _PyUnicode_InternInPlace(interp, &string);
-    string = &_Py_ID(traceback);
     assert(_PyUnicode_CheckConsistency(string, 1));
     _PyUnicode_InternInPlace(interp, &string);
     string = &_Py_ID(trailers);

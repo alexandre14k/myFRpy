@@ -741,7 +741,7 @@ def main():
 
     # Regen build-related files.
     regen_makefile(modules)
-    regen_pcbuild(modules)
+    #regen_pcbuild(modules)# removed Windows support
     regen_frozen(modules, frozen_modules)
 
 

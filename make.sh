@@ -3,6 +3,11 @@
 APP=$(basename "$PWD")
 DIR="build|Makefile|config.status|config.log|pybuilddir.txt"
 
+do_run() {
+    # run if exists
+    [[ -e "$APP" ]]; ./$APP
+}
+
 do_regen() {
     # regenerate everything
     make regen-all
@@ -50,12 +55,12 @@ do_menu() {
     echo ""
     echo "   project <$APP>"
     echo ""
-    echo "   d -- dir project"
-    echo "   p -- regen"
-    echo "   b -- build"
-    echo "   r -- run"
-    echo "   c -- clean"
-    echo "   x -- exit"
+    echo "   d -- tree  | arborescence"
+    echo "   p -- regen | configurer"
+    echo "   b -- build | construire"
+    echo "   r -- run   | exécuter"
+    echo "   c -- clean | nettoyer"
+    echo "   x -- exit  | quitter"
     echo ""
 }
 

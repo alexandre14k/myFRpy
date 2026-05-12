@@ -774,7 +774,6 @@ extern "C" {
     INIT_ID(_xoptions), \
     INIT_ID(a), \
     INIT_ID(abs_tol), \
-    INIT_ID(access), \
     INIT_ID(add), \
     INIT_ID(add_done_callback), \
     INIT_ID(after_in_child), \
@@ -890,7 +889,6 @@ extern "C" {
     INIT_ID(dont_inherit), \
     INIT_ID(dst), \
     INIT_ID(dst_dir_fd), \
-    INIT_ID(duration), \
     INIT_ID(e), \
     INIT_ID(eager_start), \
     INIT_ID(effective_ids), \
@@ -906,8 +904,6 @@ extern "C" {
     INIT_ID(errors), \
     INIT_ID(event), \
     INIT_ID(eventmask), \
-    INIT_ID(exc_type), \
-    INIT_ID(exc_value), \
     INIT_ID(excepthook), \
     INIT_ID(exception), \
     INIT_ID(existing_file_name), \
@@ -937,7 +933,6 @@ extern "C" {
     INIT_ID(flush), \
     INIT_ID(follow_symlinks), \
     INIT_ID(format), \
-    INIT_ID(frequency), \
     INIT_ID(from_param), \
     INIT_ID(fromlist), \
     INIT_ID(fromtimestamp), \
@@ -1123,7 +1118,6 @@ extern "C" {
     INIT_ID(protocol), \
     INIT_ID(ps1), \
     INIT_ID(ps2), \
-    INIT_ID(query), \
     INIT_ID(quotetabs), \
     INIT_ID(r), \
     INIT_ID(raw), \
@@ -1143,7 +1137,6 @@ extern "C" {
     INIT_ID(reload), \
     INIT_ID(repl), \
     INIT_ID(replace), \
-    INIT_ID(reserved), \
     INIT_ID(reset), \
     INIT_ID(resetids), \
     INIT_ID(return), \
@@ -1178,7 +1171,6 @@ extern "C" {
     INIT_ID(sleep), \
     INIT_ID(sock), \
     INIT_ID(sort), \
-    INIT_ID(sound), \
     INIT_ID(source), \
     INIT_ID(source_traceback), \
     INIT_ID(src), \
@@ -1198,7 +1190,6 @@ extern "C" {
     INIT_ID(strict), \
     INIT_ID(strict_mode), \
     INIT_ID(string), \
-    INIT_ID(sub_key), \
     INIT_ID(symmetric_difference_update), \
     INIT_ID(tabsize), \
     INIT_ID(tag), \
@@ -1220,7 +1211,6 @@ extern "C" {
     INIT_ID(timetuple), \
     INIT_ID(top), \
     INIT_ID(trace_callback), \
-    INIT_ID(traceback), \
     INIT_ID(trailers), \
     INIT_ID(translate), \
     INIT_ID(true), \
