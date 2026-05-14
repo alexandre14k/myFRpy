@@ -19,7 +19,7 @@ do_build() {
     make -j8
 }
 
-do_clean() {
+do_erase() {
     # remove all build artifacts
     items=(
         Makefile config.status config.log pybuilddir.txt
@@ -29,6 +29,10 @@ do_clean() {
     for item in "${items[@]}"; do
         [ -e "$item" ] && rm -rf "$item"
     done
+}
+
+do_clean() {
+    do_erase
 
     # configure
     # use 2>&1 >/dev/null to hide checks
@@ -60,6 +64,7 @@ do_menu() {
     echo "   b -- build | construire"
     echo "   r -- run   | exécuter"
     echo "   c -- clean | nettoyer"
+    echo "   e -- erase | effacer"
     echo "   x -- exit  | quitter"
     echo ""
 }
@@ -80,6 +85,7 @@ main() {
             b) do_build;;
             r) do_run;;
             c) do_clean;;
+            e) do_erase;;
             x) break;;
             *) do_default;;
         esac
